@@ -1,0 +1,436 @@
+/* กำหนด keyframes สำหรับแอนิเมชัน */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* เลื่อนขึ้นจากตำแหน่งเริ่มต้น */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* กลับไปที่ตำแหน่งเดิม */
+    }
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+        transform: translateX(20px); /* เลื่อนขึ้นจากตำแหน่งเริ่มต้น */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* กลับไปที่ตำแหน่งเดิม */
+    }
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    background-color: transparent;
+    border: 4px solid black;
+    box-shadow: 0 0 10px #000000;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.BA{
+    background-attachment: fixed; /* ตรึง background ไว้ */
+    font-family: 'Press Start 2P', sans-serif;
+    background-image: url("background/Baback1.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wuwa{
+    background-attachment: fixed; /* ตรึง background ไว้ */
+    font-family: 'Press Start 2P', sans-serif;
+    background-image: url("background/wuwaback1.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.PGR{
+    background-attachment: fixed; /* ตรึง background ไว้ */
+    font-family: 'Press Start 2P', sans-serif;
+    background-image: url("background/PGRback1.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.HSR{
+    background-attachment: fixed; /* ตรึง background ไว้ */
+    font-family: 'Press Start 2P', sans-serif;
+    background-image: url("background/HSRback1.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.genshin{
+    background-attachment: fixed; /* ตรึง background ไว้ */
+    font-family: 'Press Start 2P', sans-serif;
+    background-image: url("background/Giback1.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    background-attachment: fixed; /* ตรึง background ไว้ */
+    font-family: 'Press Start 2P', sans-serif;
+    background-image: url(https://www.bing.com/th/id/OGC.5b082b57f17e55f3e6a3c22cea8d8582?pid=1.7&rurl=https%3a%2f%2fgiffiles.alphacoders.com%2f211%2f211931.gif&ehk=skq0k7ObWUQiSrQF1KHA4CKHrBvDtWkimzK4Q9vNCEg%3d);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-me {
+    width: 85%;
+    height: 75%;
+    background:transparent;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border: 4px solid #000000;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start; /* จัดตำแหน่งซ้าย */
+    align-items: flex-start; /* จัดตำแหน่งบน */
+}
+
+.me {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 4px solid #f8f8f8;
+    color: #ffffff;
+    text-shadow: 3px 3px 10px rgb(255, 3, 3); /* เงาเบลอสีดำ */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: left; /* จัดข้อความด้านซ้าย */
+    max-width: 50%; /* กำหนดความกว้างสูงสุดไม่เกินครึ่งหนึ่งของ container */
+}
+
+.me h1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.me h1 span {
+    position: relative;
+    display: inline-block;
+}
+
+.me h1 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #f70000; /* สีของ underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out; /* ระยะเวลาและรูปแบบการเปลี่ยนแปลง */
+}
+
+.me h1:hover span::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.me span{
+    color: #f70000; /* สีข้อความ */
+    text-shadow: 3px 3px 10px rgba(233, 0, 0, 0.7); /* เงาเบลอสีดำ */
+}
+
+.info{
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.7); /* เงาเบลอสีดำ */
+    color: #ffffff;
+    text-align: left; /* จัดข้อความด้านซ้าย */
+    margin-bottom: 20px;
+}
+
+.image {
+    position: absolute; /* จัดตำแหน่งของรูปภาพ */
+    top: 17.5px; /* ระยะห่างจากด้านบน */
+    right: 30px; /* ระยะห่างจากด้านขวา */
+    width: 550px; /* ขนาดของรูปภาพ */
+    height: 550px;
+    border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
+    overflow: hidden;
+    border: 5px solid #000000;
+    box-shadow: 0 0 10px #000100;
+}
+
+.image img {
+    width: 100%; /* กำหนดให้รูปภาพเต็มกรอบ */
+    height: 125%; /* กำหนดให้รูปภาพเต็มกรอบ */
+    object-fit: cover; /* ปรับให้รูปภาพเต็มกรอบและไม่ผิดสัดส่วน */
+}
+
+.TypeWriter{
+    color: #000000; /* สีข้อความ */
+    font-weight: 500;
+}
+
+.CodeWriter-text{
+    color: #000000; /* สีข้อความ */
+    font-weight: 500;
+}
+
+.TypeWriter-text{
+    color: #f70000; /* สีข้อความ */
+    text-shadow: 3px 3px 10px rgba(233, 0, 0, 0.7); /* เงาเบลอสีดำ */
+    font-weight: 900;
+}
+
+.CodeWriter-text{
+    color: #caf700; /* สีข้อความ */
+    text-shadow: 3px 3px 10px rgba(227, 151, 10, 0.7); /* เงาเบลอสีดำ */
+    font-weight: 900;
+}
+
+.image img:hover{
+    animation: animate 3s ease-in-out infinite;
+}
+@keyframes animate {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('https://fonts.gstatic.com/s/pressstart2p/v12/e3t4euO8Kgd2wQgfTUuCAqD2ttfKJkhWgEM86xRbPQ.woff2');
+}
+
+.menu{
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 1100;
+}
+
+.menu a {
+    animation: fadeIn2 1s ease-in-out both; /* 1s คือระยะเวลาแอนิเมชัน */
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: -12.5px;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 10px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-shadow: 3px 3px 10px rgba(233, 0, 0, 0.7); /* เงาเบลอสีดำ */
+    font-weight: 700;
+}
+
+.menu a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.game a {/*detail*/
+    text-align: center;
+    color: #00ff00;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.game a:hover{
+    background-color: #f3f3f3;
+    color: #000000;
+}
+
+.game {
+    position: relative;
+    width: 250px;
+    height: 500px;
+    margin: 10px;
+    overflow: hidden; /* ป้องกันไม่ให้เนื้อหาล้นขอบ */
+    border: 4px solid #000000;
+    box-shadow: 0 0 10px #000000;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงที่นุ่มนวล */
+}
+
+.game-slide-img{
+    position: relative;
+    width: 250px;
+    height: 500px;
+    margin: 10px;
+    overflow: hidden; /* ป้องกันไม่ให้เนื้อหาล้นขอบ */
+    border: 4px solid #000000;
+    box-shadow: 0 0 10px #000000;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงที่นุ่มนวล */
+}
+
+.game-slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game:hover {
+    transform: scale(1.05); /* ขยายขนาดการ์ด */
+    transition: transform 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงที่นุ่มนวล */
+}
+
+.game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-out; /* เพิ่มการเปลี่ยนแปลงที่นุ่มนวลสำหรับภาพ */
+}
+
+.game-info {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.game-info h2 {
+    color: #00ff00;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-weight: 1000px;
+}
+
+.game-info p {
+    color: #cccccc;
+    line-height: 1.5;
+    font-weight: 500px;
+    text-align: center;
+}
+
+.container-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out both; /* 1s คือระยะเวลาแอนิเมชัน */
+}
+
+.game:hover img {
+    transform: scale(1.2); /* ขยายภาพเมื่อเมาส์ชี้ */
+}
+
+.game:hover {
+    transform: scale(1.05); /* ขยายการ์ดเมื่อเมาส์ชี้ */
+}
+
+.game-intro{
+    animation: fadeIn 1s ease-in-out both; /* 1s คือระยะเวลาแอนิเมชัน */
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    margin-top: 5%;
+    margin-bottom: auto;
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+    border: 4px solid #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-intro-text{
+    color: #000000; /* สีข้อความ */
+    text-shadow: 3px 3px 10px rgba(0, 183, 233, 0.7); /* เงาเบลอสีดำ */
+    margin-bottom: 10px;
+    font-weight: 1000px;
+    font-size: 2.2rem;
+}
+
+.game-slider {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Keeps images within bounds */
+    width: 100%;
+    position: relative;
+}
+
+.slides {
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.slides-text{
+    color: #ffffff; /* สีข้อความ */
+    text-shadow: 3px 3px 10px rgba(1, 1, 1, 0.7); /* เงาเบลอสีดำ */
+    font-weight: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 4px solid #000000;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #1f1c1c;
+    backdrop-filter: blur(10px);
+}
+
+.slides img {
+    width: 290px; /* เพิ่มขนาดความกว้างของรูปภาพ */
+    height: 170px; /* ให้ความสูงปรับตามสัดส่วนความกว้าง */
+    border: 4px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover; /* ครอบคลุมกรอบโดยไม่ผิดสัดส่วน */
+}
+
